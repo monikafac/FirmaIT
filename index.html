@@ -18,9 +18,9 @@
 HOME
      </section>    
             <ul class="menu">
-                <li class="menuHome">home</li>
-                <li class="menuOffer">oferta</li>
-                <li class="menuContact">kontakt</li>
+                <li class="menuHome"><p>home</p></li>
+                <li class="menuOffer"><p>oferta</p></li>
+                <li class="menuContact"><p>kontakt</p></li>
             </ul>
          
 
@@ -29,7 +29,41 @@ HOME
     </div>
 
     <div class="contact">
-        COINTACT
+        <div class="form">
+            <form class="form" action="adres-do-wysylki" method="post">
+                <div class="form-row">
+                    <label for="formName">Imię:</label>
+                    <input type="text" id="formName" placeholder=" Wystarczy Twoje imię..." />
+                </div>
+               
+                <div class="form-row">
+                    <label for="formEmail" >Email:</label>
+                    <input type="email"  id="formEmail" required placeholder=" e-mail" />
+                </div>
+
+                <div class="form-row">
+                    <label for="formThing">Sprecyzuj, czego dotyczyć będzie wiadomość: </label>
+                    <select id="formThing" required>
+                        <option value="">Wybierz</option>
+                        <option value="1">Strona firmowa</option>
+                        <option value="2">Sklep internetowy</option>
+                        <option value="3">Pozycjonowanie</option>
+                        <option value="4">Inne</option>
+                    </select>
+                </div>
+            
+                <div class="form-row">
+                    <label for="formMessage">Wiadomość do nas:</label>
+                    <textarea id="formMessage" required pattern="^abc$"></textarea>
+                </div>
+            
+                
+            
+                
+                    <input type="submit" value="Wyślij" />
+                </div>
+            </form>
+        </div>
     </div>
     </section>
 </body>

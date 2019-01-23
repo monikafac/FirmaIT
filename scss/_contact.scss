@@ -1,5 +1,111 @@
 .contact{
     height: 100vh;
     width:auto;
-    background-color: yellow;
+    background-image:url(../img/work-731198_1920.jpg);
+    //dodac zjeciawinnejrozdielczosci
+    display: flex;
+    justify-content: center;
+    .form{
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       flex-direction: column;
+       
+       .form-row{
+        display: flex;
+        background-color: rgba(255,255,255,0.8);
+        padding: 0 10% 0 10%;
+        width:60vw;
+        @media(max-width:639px){
+            width: 100vw;
+            flex-direction: column;
+          
+        }
+        @media(min-width:640px) and (max-width:1280px){
+            width: 80vw;
+            
+        }
+        &:nth-of-type(1){
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-left:2px solid $details-color;
+            border-top:2px solid $details-color;
+            border-right: 2px solid $details-color;
+        }
+        &:nth-of-type(2){
+            border-left:2px solid $details-color;
+            border-right: 2px solid $details-color;
+        }
+        &:nth-of-type(3){
+            border-left:2px solid $details-color;
+            border-right: 2px solid $details-color;
+        }
+        &:nth-of-type(4){
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-left:2px solid $details-color;
+            border-bottom:2px solid $details-color;
+            border-right: 2px solid $details-color;
+
+        }
+
+        label{
+            flex-basis: 50%;
+            font-size: 20px;
+            padding: 3% 0 3% 0;
+            align-self: center;
+            @media(max-width:639px){
+                font-size: 16px;
+                padding: 0;                
+                
+            }
+            @media(min-width:640px) and (max-width:1280px){
+                font-size: 16px;
+                
+            }
+            
+        }
+        input{
+            flex-basis: 50%;
+            align-self: center;
+            height: 5vh;
+            margin: 3% 0 3% 0;
+        }
+        select{
+            flex-basis: 50%;
+            align-self: center;
+            height: 5vh;
+            margin: 3% 0 3% 0;
+          //  border-radius: 10px;
+
+        }
+        textarea{
+            flex-basis: 50%;
+            height: 10vh;
+            margin: 3% 0 3% 0;
+           // border-radius: 10px;
+        }
+       }
+       input[type="submit"]{
+           width:200px;
+           height: 50px;
+           align-self: center;
+           margin-top: 2%;
+           border:2px solid $details-color;
+           cursor: pointer;
+           font-size: 20px;
+           font-family: 'Source Sans Pro', sans-serif;
+           transition: 0.2s;
+           border-radius: 10px;
+
+           &:hover{
+            background-color: rgba(255,255,255,0.5);
+            
+
+           }
+
+
+       }
+    }
+    
 }

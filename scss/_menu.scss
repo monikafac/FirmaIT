@@ -18,7 +18,7 @@
      
      li{
          flex-grow: 1;
-         background-color:#263238;         ;
+         background-color:$base-color;         ;
          text-align: center;
          height: 7vh;
          text-decoration: none;
@@ -34,7 +34,9 @@
             font-size: 18px;
             
         }
-        
+        p{
+            cursor: pointer;
+        }
          
      }
  }
