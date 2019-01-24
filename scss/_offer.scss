@@ -2,36 +2,54 @@
     height: 100vh;
     width:auto;
     display: flex;
-    .about{
+    flex-direction: column;
+    .offerRow1{
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         div{
-            flex-basis: 50%;
+            flex-basis: 33%;
+            
+            img{
+                width: 100%;
+            }
+            
+        }
+        .description{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 2%;
+            margin-right: 2%;
+            line-height: 1.5;
+            font-size: 22px;
+            text-align: center;
+            span{
+                color:$details-color;
+            }
+        }
+    }
+    .offerRow2{
+        display: flex;
+        justify-content: space-between;
+        div{
+            flex-basis: 33%;
             img{
                 width: 100%;
             }
         }
-    }
-    .team{
-        display: flex;
-        flex-direction: column;
-        div{
-            flex-basis: 50%;
-            img{
-                width: 100%;
+        .description{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 2%;
+            margin-right: 2%;
+            line-height: 1.5;
+            font-size: 22px;
+            text-align: center;
+            span{
+                color:$details-color;
             }
         }
-    }
-
-    .projects{
-        display: flex;
-        flex-direction: column;
-        div{
-            flex-basis: 50%;
-            img{
-                width: 100%;
-            }
-        }
-    }
+    } 
     
 }
