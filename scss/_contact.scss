@@ -2,14 +2,22 @@
     height: 100vh;
     width:auto;
     background-image:url(../img/work-731198_1920.jpg);
-    //dodac zjeciawinnejrozdielczosci
     display: flex;
     justify-content: center;
+    @media(max-width:639px){
+    background-image: url(../img/work-731198_1920_639.jpg);
+      
+    }
+    @media(min-width:640px) and (max-width:1280px){
+    background-image: url(../img/work-731198_1920_1280.jpg);
+        
+    }
     .form{
        display: flex;
        justify-content: center;
        text-align: center;
        flex-direction: column;
+       
        
        .form-row{
         display: flex;
@@ -31,14 +39,34 @@
             border-left:2px solid $details-color;
             border-top:2px solid $details-color;
             border-right: 2px solid $details-color;
+            @media(max-width:639px){
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-left:0px;
+            border-right:0px;
+            padding-top: 3%;
+            flex-direction: row;
+            }
         }
         &:nth-of-type(2){
             border-left:2px solid $details-color;
             border-right: 2px solid $details-color;
+            @media(max-width:639px){
+            border-left:0px;
+            border-right:0px;
+            flex-direction: row;
+
+            }
         }
         &:nth-of-type(3){
             border-left:2px solid $details-color;
             border-right: 2px solid $details-color;
+            @media(max-width:639px){
+                border-left:0px;
+                border-right:0px;
+                padding-top: 3%;
+                
+                }
         }
         &:nth-of-type(4){
             border-bottom-left-radius: 10px;
@@ -46,7 +74,13 @@
             border-left:2px solid $details-color;
             border-bottom:2px solid $details-color;
             border-right: 2px solid $details-color;
-
+            @media(max-width:639px){
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-left:0px;
+                border-right:0px;
+                  
+                }
         }
 
         label{
@@ -97,6 +131,16 @@
            font-family: 'Source Sans Pro', sans-serif;
            transition: 0.2s;
            border-radius: 10px;
+           @media(max-width:639px){
+           margin-top: 3%; 
+           width:150px;
+           height: 40px;                   
+        }
+        @media(min-width:640px) and (max-width:1280px){
+            width:150px;
+           height: 40px;  
+            
+        }
 
            &:hover{
             background-color: rgba(255,255,255,0.5);
