@@ -1,5 +1,37 @@
 .offer{
     height: 100vh;
     width:auto;
-    background-color: blue;
+    display: flex;
+    .about{
+        display: flex;
+        flex-direction: column;
+        div{
+            flex-basis: 50%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .team{
+        display: flex;
+        flex-direction: column;
+        div{
+            flex-basis: 50%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .projects{
+        display: flex;
+        flex-direction: column;
+        div{
+            flex-basis: 50%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
 }

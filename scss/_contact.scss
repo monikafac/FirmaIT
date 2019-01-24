@@ -34,8 +34,7 @@
             
         }
         &:nth-of-type(1){
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            
             border-left:2px solid $details-color;
             border-top:2px solid $details-color;
             border-right: 2px solid $details-color;
@@ -69,8 +68,7 @@
                 }
         }
         &:nth-of-type(4){
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
+            
             border-left:2px solid $details-color;
             border-bottom:2px solid $details-color;
             border-right: 2px solid $details-color;
@@ -97,6 +95,7 @@
                 font-size: 16px;
                 
             }
+           
             
         }
         input{
@@ -128,9 +127,9 @@
            border:2px solid $details-color;
            cursor: pointer;
            font-size: 20px;
-           font-family: 'Source Sans Pro', sans-serif;
+           font-family: 'Quicksand', sans-serif;
            transition: 0.2s;
-           border-radius: 10px;
+           
            @media(max-width:639px){
            margin-top: 3%; 
            width:150px;

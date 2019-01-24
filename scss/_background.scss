@@ -11,11 +11,23 @@
         border-left:  2px solid $details-color;
         padding: 2% 5%;
         overflow-x:hidden; 
+        @media(max-width:639px){
+            width:50vw;  
+        }
         p{
             font-size: 40px;
             animation: animationp 5s;
             animation-fill-mode: forwards;
-
+            @media(max-width:639px){
+                font-size: 25px;
+                animation: animationp 3s;
+         
+                
+            }
+            @media(min-width:640px) and (max-width:1280px){
+                font-size: 25px;
+                
+            }
         }
     }
     .leftAnimation{
