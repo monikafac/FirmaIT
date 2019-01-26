@@ -103,20 +103,26 @@
             align-self: center;
             height: 5vh;
             margin: 3% 0 3% 0;
+            font-family: 'Quicksand', sans-serif;
+           
         }
         select{
             flex-basis: 50%;
             align-self: center;
             height: 5vh;
             margin: 3% 0 3% 0;
-          //  border-radius: 10px;
+            font-family: 'Quicksand', sans-serif;
+
+          
 
         }
         textarea{
             flex-basis: 50%;
             height: 10vh;
             margin: 3% 0 3% 0;
-           // border-radius: 10px;
+            font-family: 'Quicksand', sans-serif;
+
+           
         }
        }
        input[type="submit"]{
